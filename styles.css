@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.junction__header {
+  font-size: 50px;
+  font-family: arial;
+  margin: 20px;
+}
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.left__imageContainer {
+  border-bottom: 1px solid grey;
+  padding: 20px;
+}
+
+.nav__items {
+  font-size: 20px;
+  font-family: arial;
+  font-weight: 300;
+  color: white;
+  cursor: pointer;
+}
+
+.nav__items:hover {
+  color: #adadad;
+  transition: 200ms ease-in;
+}
+.left__imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 90%;
+  object-fit: contain;
+  overflow: hidden;
+}
+.left__Image {
+  -webkit-filter: brightness(100%);
+  transition: all 0.3s ease-in-out;
+}
+.left__imageText {
+  position: absolute;
+  display: none;
+}
+.left__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 20px;
+  font-family: arial;
+  font-weight: 300;
+}
+
+.left__Image:hover + .left__imageText {
+  display: block;
+}
+
+.left__Image:hover {
+  -webkit-filter: brightness(70%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  transform: scale(1.07);
+}
+
+/* 
+  display: flex;
+  width: 750px;
+  height: 170px;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  backdrop-filter: blur(6px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  background-color: linear-gradient(
+    to right,
+    rgba(17, 25, 40, 0.75),
+    rgba(57, 57, 58, 0.75)
+  );
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding-left: 5px;
+   */
